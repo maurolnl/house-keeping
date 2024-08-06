@@ -95,12 +95,14 @@ export const LoginForm: React.FC<Props> = ({ onSubmit }) => {
                   </Link>
                 </div>
                 <FormControl>
-                  <Input
-                    type="password"
-                    placeholder="Password"
-                    required
-                    {...field}
-                  />
+                  <div className="flex flex-row space-x-2">
+                    <Input
+                      type="password"
+                      placeholder="Password"
+                      required
+                      {...field}
+                    />
+                  </div>
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
